@@ -1,7 +1,12 @@
-body{
-  background-color: rgb(202, 172, 236);
+body {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  color: white;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: Lato;
 }
