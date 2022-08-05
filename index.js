@@ -62,10 +62,10 @@ const jonas = {
       console.log(this);
       console.log(this.year >= 1981 && this.year <= 1996);
     };
-    isMillenial_that();
-    isMillenial_solution1();
-    isMillenial_solution2(); /* arrow function inhiret parent scope */
-    isMillenial();
+    isMillenial_that(); /* self this */
+    isMillenial_solution1(); /* bind(this) */
+    isMillenial_solution2(); /* arrow function inherit parent scope */
+    isMillenial(); /* error */
   },
   greet: () => console.log(`hey ${this.firstName}`),
 };
