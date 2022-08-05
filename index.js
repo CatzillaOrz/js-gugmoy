@@ -46,6 +46,25 @@ const jonas = {
       console.log(this);
       console.log(this.year >= 1981 && this.year <= 1996);
     };
+
+    const that = this;
+    const isMillenial_that = function () {
+      console.log(that);
+      console.log(that.year >= 1981 && that.year <= 1996);
+    };
+
+    const isMillenial_solution1 = function () {
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
+    }.bind(this);
+
+    const isMillenial_solution2 = () => {
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
+    isMillenial_that();
+    isMillenial_solution1();
+    isMillenial_solution2(); /* arrow function inhiret parent scope */
     isMillenial();
   },
   greet: () => console.log(`hey ${this.firstName}`),
