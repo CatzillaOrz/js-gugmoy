@@ -72,3 +72,17 @@ const jonas = {
 
 jonas.greet(); /* this => undefined */
 jonas.calcAge(); /* this => undefined */
+
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+
+addExpr(2, 3, 4, 5, 6); /* ok */
+
+const addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+
+addArrow(1, 2, 3, 4, 5); /* Error */
