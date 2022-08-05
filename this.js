@@ -53,6 +53,7 @@ const jonas = {
       console.log(that.year >= 1981 && that.year <= 1996);
     };
 
+    /* [bind] return a new function */
     const isMillenial_solution1 = function () {
       console.log(this);
       console.log(this.year >= 1981 && this.year <= 1996);
