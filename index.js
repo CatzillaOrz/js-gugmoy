@@ -1,5 +1,5 @@
 // DOM lifecycle
 
-document.addEventListener('DOMContentLoaded', (e) => {
+document.addEventListener('DOMContentLoaded', function (e) {
   console.log('e');
 });
