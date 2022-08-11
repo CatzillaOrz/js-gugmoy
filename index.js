@@ -1,4 +1,7 @@
+import './style.css';
+
 // DOM lifecycle
+
 console.log('helleo');
 
 document.addEventListener('DOMContentLoaded', function (e) {
