@@ -11,3 +11,13 @@ document.querySelector('body').appendChild(node);
 document
   .querySelector('body')
   .insertAdjacentHTML('beforeend', `<h1>Hello world</h1>`);
+
+window.addEventListener('load', function (e) {
+  console.log(e);
+});
+
+window.addEventListener('beforeunload', function (e) {
+  e.preventDefault();
+  // console.log(e);
+  e.returnValue = 'Message is showing @catzilla';
+});
