@@ -25,3 +25,4 @@ console.log(Person.prototype.constructor); // :
         this.age = age;
     }
 } */
+console.log(new Person().__proto__); // : {constructor: ƒ}
