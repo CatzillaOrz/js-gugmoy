@@ -36,3 +36,15 @@ console.log(Tom.__proto__);
 console.log(Person.prototype.isPrototypeOf(Tom));
 console.log(Person.prototype.isPrototypeOf(Lily));
 console.log(Person.prototype.isPrototypeOf(Person));
+
+Person.prototype.species = 'Homo Sapiens';
+
+console.log(Tom.species, Lily.species);
+
+/*
+ **  hasOwnProperty
+ **   [√] check if property if from Prototype
+ **
+ */
+console.log(Tom.hasOwnProperty('species')); // false
+console.log(Tom.hasOwnProperty('name')); // true
