@@ -1,5 +1,5 @@
 // Exporting module
-
+/*
 const fethUsers = async function () {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
 
@@ -12,7 +12,7 @@ const fethUsers = async function () {
 const users = await fethUsers();
 console.log(users);
 console.log('==== finished fetching user and get Last use');
-
+ */
 console.log('Exporting module');
 
 const shippingCost = 10;

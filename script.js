@@ -40,7 +40,40 @@ console.log(lastPost2);
 /**
  * await Block code, should use carefully
  */
-
+/*
 import * as Shopping from './shoppingCarts.js';
 
 console.log(Shopping.totalPrice);
+ */
+
+/**
+ * 247 The Module Pattern
+ *
+ */
+/*
+const ShoppingCart2 = (function () {
+    const cart = [];
+    const totalPrice = 27;
+    const totalQuantity = 237;
+    const addToCart = function (product, quantity) {
+        cart.push({ product, quantity });
+        console.log(`${quantity} ${product} added to cart`);
+    };
+
+    const orderStock = function (product, quantity) {
+        cart.push({ product, quantity });
+        console.log(`${quantity} ${product} ordered from supplier`);
+    };
+
+    return {
+        addToCart,
+        cart,
+        totalPrice,
+        totalQuantity,
+    };
+})();
+
+ShoppingCart2.addToCart('apple', 4);
+ShoppingCart2.addToCart('pizza', 1);
+console.log(ShoppingCart2);
+ */
