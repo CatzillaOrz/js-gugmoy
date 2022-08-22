@@ -36,3 +36,11 @@ const lastPost = getLastPost();
 const lastPost2 = await getLastPost();
 console.log(lastPost2);
  */
+
+/**
+ * await Block code, should use carefully
+ */
+
+import * as Shopping from './shoppingCarts.js';
+
+console.log(Shopping.totalPrice);
