@@ -50,7 +50,7 @@ console.log(Shopping.totalPrice);
  * 247 The Module Pattern
  *
  */
-
+/*
 const ShoppingCart2 = (function () {
     const cart = [];
     const totalPrice = 27;
@@ -71,8 +71,22 @@ const ShoppingCart2 = (function () {
         totalPrice,
         totalQuantity,
     };
-})();
+})(); */
 
-ShoppingCart2.addToCart('apple', 4);
-ShoppingCart2.addToCart('pizza', 1);
-console.log(ShoppingCart2);
+// ShoppingCart2.addToCart('apple', 4);
+// ShoppingCart2.addToCart('pizza', 1);
+// console.log(ShoppingCart2);
+
+// if (module.hot) {
+//     module.hot.accept();
+// }
+
+/**
+ * 279 Configuring Bable and Polyfilling
+ */
+import 'core-js/stable/array';
+
+// Polifilling async functions
+
+console.log('Jonason' ?? null);
+// console.log('Jonason');
